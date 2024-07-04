@@ -8,8 +8,9 @@ import (
 )
 
 type ModbusSensorConfig struct {
-	Modbus *common.ModbusClientConfig `json:"modbus"`
-	Blocks []ModbusBlocks             `json:"blocks"`
+	Modbus      *common.ModbusClientConfig `json:"modbus"`
+	Blocks      []ModbusBlocks             `json:"blocks"`
+	CreateJobID bool                       `json:"create_job_id"`
 }
 
 type ModbusBlocks struct {
